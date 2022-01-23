@@ -1,0 +1,18 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Claudiu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chart.js": "^3.6.2",
+    "chartjs-plugin-zoom": "^1.2.0",
+    "express": "^4.17.1",
+    "serialport": "^9.2.7"
+  }
+}

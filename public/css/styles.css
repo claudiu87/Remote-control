@@ -1,0 +1,788 @@
+/* **************************Fonts***************************** */
+/* font-family: 'Electrolize', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+/* https://colorhunt.co/palette/273472 */
+/* **************************text********************************************/
+h1 {
+  font-size: 5rem;
+  font-family: 'Electrolize', sans-serif;
+  color: #5aa897;
+  margin: 0px;
+  text-align: center;
+  margin-bottom:20px;
+
+}
+
+p {
+  text-align: center;
+  color: #505050;
+  font-size: 1.3rem;
+}
+
+.heading {
+  padding: 2% 20% 0 20%;
+}
+
+.heading-text{
+  font-size: 3.5rem;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-family: 'Electrolize', sans-serif;
+  /*color: #45526c; */
+  color: black;
+ 
+}
+
+/* **************************boddy********************************************/
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f8f5f1;
+
+  font-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  z-index: -1;
+}
+
+.background {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f8f5f1;
+  z-index: -1;
+  opacity: 0.07;
+  justify-content: center;
+  align-items: center;
+}
+
+.mountain-background {
+  position: fixed;
+  height: 600px;
+  width: 600px;
+  background-color: grey;
+  clip-path: polygon(65% 75%, 59% 74%, 72% 49%, 99% 96%, 0 96%, 42% 9%);
+}
+
+/* **************************sections*****************************************/
+.top-section-grid {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 50px 50px 100px 50px auto 30px;
+  width: 100vw;
+  background-color: #5aa897;
+  /* border: 1px solid black; */
+  z-index:1;
+}
+
+.skills {
+  /* width: 100%; */
+  /* height: 100px; */
+  /* border: 1px solid black; */
+  /* padding: 7% 20% 0 20%; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+/* **************************Nav bar******************************************/
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  text-align: right;
+  background-color: #5aa897;
+  /* border: 1px solid black; */
+  /* height: 70px; */
+
+  
+
+}
+
+.nav-li {
+  display: inline-block;
+  font-size: 1.7rem;
+  margin-top: 15px;
+}
+
+.nav-li-mobile {
+  font-size: 3rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  font-family: 'Noto Serif', serif;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.nav-links:hover {
+  background-color: #45526c;
+}
+
+.menu-button {
+  background-color: #5aa897;
+  position: relative;
+}
+
+#menu {
+  transform: scale(6.5);
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  cursor: pointer;
+  opacity: 0;
+
+}
+
+.menu-line-top, .menu-line-center, .menu-line-bottom {
+  width: 70px;
+  height: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 12px 0px 10px 2px;
+}
+
+#menu:checked~.menu-line {
+  background-color: #45526c;
+}
+
+#menu:checked~.menu-line-bottom {
+  transform: translate(0, -22px);
+  transition-duration: 0.3s;
+}
+
+#menu:checked~.menu-line-top {
+  transform: translate(0, 22px);
+  transition-duration: 0.3s;
+}
+
+#menu:checked~.test {
+  background-color: #5aa897;
+  transform: none;
+}
+
+.test {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid black; */
+  background-color: #45526c;
+  top: 75px;
+  left: -200px;
+  transform: translate(300px, 0);
+  transition-duration: 0.3s;
+  border-radius: 10px;
+  
+}
+
+/* **************************Logo*********************************************/
+.logo-tree {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 50px;
+  background-color: #5aa897;
+  /* border: 1px solid black; */
+}
+
+.tree-trunk {
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  background-color: brown;
+  bottom: 0;
+  left: 23px;
+}
+
+.tree-part1 {
+  position: absolute;
+  border-top: 0 transparent;
+  border-bottom: 25px solid darkgreen;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  bottom: 15px;
+  left: 5px;
+}
+
+.tree-part2 {
+  position: absolute;
+  border-top: 0 transparent;
+  border-bottom: 20px solid green;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  bottom: 30px;
+  left: 10px;
+}
+
+.tree-part3 {
+  position: absolute;
+  border-top: 0 transparent;
+  border-bottom: 15px solid forestgreen;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 45px;
+  left: 15px;
+}
+
+.mountain {
+  background-color: #5aa897;
+  /* border: 1px solid black; */
+}
+
+.m1 {
+  width: 100px;
+  height: 70px;
+  background-color: white;
+  clip-path: polygon(42% 15%, 73% 84%, 83% 57%, 100% 100%, 0 100%, 41% 15%);
+}
+
+/* **************************info section**************************************/
+
+
+.info-me {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo, .profile-info {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.info-additional {
+  padding: 0 25%;
+}
+/* **************************info section**************************************/
+
+/* **************************Skills*******************************************/
+.info-container {
+  width: 30vw;
+  /* height: 100px; */
+  /* border: 1px solid black; */
+  border-radius: 10px;
+   margin: 30px;
+  /* margin: 30px 40px 100px 30px; */
+  position: relative;
+  z-index: 0;
+ 
+
+
+}
+
+
+.info-container p {
+  text-align: left;
+  line-height: 0;
+}
+/* **************************Skills*******************************************/
+
+/* **************************animation****************************************/
+
+@keyframes sheep {
+  0%   {;}
+ 100%  {right:0px;}
+}
+
+@keyframes baa {
+
+  0%   {opacity: 0;}
+  10%   {opacity: 0.1;}
+  20%   {opacity: 0.2;}
+  30%   {opacity: 0.3;}
+  40%   {opacity: 0.4;}
+  50%   {opacity: 0.5;}
+  60%   {opacity: 0.6;}
+  70%   {opacity: 0.7;}
+  80%   {opacity: 0.8;}
+  90%   {opacity: 0.9;}
+  100%   {opacity: 1;}
+}
+
+/* **************************animation****************************************/
+
+
+/* **************************contact-me****************************************/
+
+.contact-me-1{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  top: 300px;
+}
+
+.fa-facebook-square{
+  position: fixed;
+  font-size: 4rem;
+  color: #5aa897;
+}
+
+.fa-instagram-square{
+  position: fixed;
+  margin-top: 70px;;
+  font-size: 4rem;
+  color: #5aa897;
+
+}
+
+.fab:hover{
+color: #45526c;
+font-size: 4.5rem;
+}
+
+/* **************************bottom-container*********************************/
+
+
+
+.bottom-container{
+width: 100vw;
+height: 150px;
+background-color: #5aa897;
+position: relative;
+
+}
+
+.sheep-boddy{
+  height: 70px;
+  width: 85px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 25px;
+  left: 400px;
+  border: 1.5px dotted #5aa897;
+  /* border: 1px solid black; */
+
+}
+
+.sheep-boddy-1{
+  height: 70px;
+  width: 85px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 25.5px;
+  left: 400px;
+  border: 1px solid black;
+  z-index: 3;
+  opacity: 1;
+
+}
+
+
+.sheep-head{
+  height: 37px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  left:-35px;
+  bottom: 23px;
+  border: 1px solid black;
+  transform: rotate(-45deg);
+  z-index: 4;
+}
+
+.left-eye{
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 50%;
+  right: 14px;
+  top: 3px;
+}
+
+.right-eye{
+  height: 11px;
+  width: 11px;
+  background-color: white;
+  border: 1px solid black;
+  position: absolute;
+  border-radius: 50%;
+  right: 6px;
+  top: 12px;
+
+}
+
+.leg-1{
+  height: 30px;
+  width: 5px;
+  background-color: white;
+  position: absolute;
+  bottom:-10px;
+  left:5px;
+  border-radius: 15px;
+  border: 1px solid black;
+
+
+}
+
+.leg-2{
+  height: 30px;
+  width: 5px;
+  background-color: white;
+  position: absolute;
+  bottom:-20px;
+  left:15px;
+  border: 1px solid black;
+
+  border-radius: 15px;
+
+
+}
+
+.leg-3{
+  height: 30px;
+  width: 5px;
+  background-color: white;
+  position: absolute;
+  bottom:-20px;
+  left:45px;
+  border-radius: 15px;
+  border: 1px solid black;
+
+
+}
+
+
+.leg-4{
+  height: 30px;
+  width: 5px;
+  background-color: white;
+  position: absolute;
+  bottom:-23px;
+  left:57px;
+  border-radius: 15px;
+  border: 1px solid black;
+
+
+}
+
+.foot{
+  height: 3px;
+  width: 6px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50px;
+  bottom:-1px;
+  left: -3px;
+  border: 1px solid black;
+
+
+}
+
+.eye{
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  animation: sheep 2s infinite ;
+}
+
+ .nose-1{
+   width: 3px;
+   height: 3px;
+   border-radius: 50%;
+   background-color: black;
+   position: absolute;
+   left:5px;
+   bottom: 17px;
+ }
+ .nose-2{
+   width: 3px;
+   height: 3px;
+   border-radius: 50%;
+   background-color: black;
+   position: absolute;
+   left:7px;
+   bottom: 14px;
+ }
+
+.ear-left{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+  right: 5px;
+  top: -5px;
+}
+
+.ear-right{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+  left: 48px;
+  top: 17px;
+}
+
+.bee{
+  width: 50px;
+  height: 35px;
+  background-color: white;
+  border-radius:2px;
+  position: absolute;
+  top: 20px;
+  left:345px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  text-align: center;
+  animation: baa 2s infinite;
+
+}
+
+
+.tail{
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+  right: -5px;
+  top:15px;
+
+}
+/* **************************bottom-container*********************************/
+
+/* **************************buttons********************************************/
+.btn{
+display: block;
+width: 30vw;
+height: 6vh;
+border: 5px;
+border-style: solid;
+border-color: #5aa897;
+border-radius: 10px;
+margin-bottom: 20px;
+color: black;
+font-size: 1.2rem;
+font-family: 'Electrolize', sans-serif;
+/*color: #45526c; */
+font-weight: 900;
+background-color: #f8f5f1;
+opacity: 0.9;
+
+}
+
+.btn:hover {
+  box-shadow: 1px 2px 22px 0px rgba(89,87,87,0.85);
+  cursor: pointer;
+}
+
+.slider{
+-webkit-appearance: none;
+ /*background: WhiteSmoke; */
+ 
+ background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+ border: 1px solid #5aa897;
+ border-radius: 10px;
+ height: 5px;
+ width: 29.5vw;
+ margin-bottom: 15px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #5aa897;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+
+/* **************************buttons********************************************/
+
+
+/* **************************chart**********************************************/
+
+.chartSection{
+height: 470px; 
+width:60vw; 
+margin:auto; 
+
+margin-top:60px;
+margin-bottom:200px;
+display: block;
+}
+
+.chartContainer{
+border: 5px solid #5aa897; 
+border-radius: 5px;
+}
+
+input[type="text"], textarea {
+
+background-color : #f8f5f1; 
+width:70px;
+border: 1px solid grey;
+}
+
+/* **************************chart**********************************************/
+
+/* **************************media********************************************/
+@media (max-width: 1028px) {
+  p {
+    font-size: 2rem;
+  }
+
+  h2{
+    font-size: 3rem;
+
+  }
+
+  .info-additional {
+    padding: 0 5%;
+    
+  }
+
+  /* .nav-li{
+    font-size: 2.6rem;
+    padding-bottom: 10px;
+  } */
+  .info-me, .profile-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-container ul {
+    visibility: hidden;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .info-container {
+    width: 80vw;
+    margin: auto;
+  }
+
+  .first-info-container-padding{
+    padding-bottom: 100px;
+  }
+
+.education, .experience {
+ width: 80vw;
+grid-template-columns: 20vw 60vw;
+}
+
+.hobby{
+width: 700px;
+height: 400px;
+}
+
+.hobbies{
+width: 80vw;
+
+}
+
+
+.fa-instagram-square{
+  margin-top: 100px;;
+
+}
+
+.fab:hover{
+color: #45526c;
+font-size: 7rem;
+}
+
+.fab{
+font-size: 6rem;}
+
+.top-section-grid {
+
+  grid-template-columns: 50px 50px 100px 50px auto 100px;
+
+}
+
+.btn{
+ width:80vw;
+ font-size: 2.7rem;
+ height: 8vh;
+}
+
+.slider{
+ width:80vw;
+ height: 1vh;
+ margin-bottom:90px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  height: 5vh;
+  width: 3vw;
+
+}
+
+.chartSection{
+
+width:80vw; 
+margin-bottom: 100px;
+}
+
+
+.btnChart{
+height:2.5vh;
+width:15vw;
+
+}
+
+input[type="text"], textarea {
+height:2vh;
+width:10vw;
+font-size: 1.3rem;
+width:8vw;
+border: 1px solid grey;
+}
+
+
+}
+
+@media (min-width: 1028px) {
+  .menu-line-top, .menu-line-center, .menu-line-bottom {
+    visibility: hidden;
+  }
+
+  #menu {
+    cursor: unset;
+    visibility: hidden;
+  }
+  
+
+  
+  
+}
+
+/* **************************media********************************************/
+

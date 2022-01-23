@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!----------------------------------------------------------Head------------------------------------------------------------------------>
+<head>
+
+  <meta charset="utf-8">
+  <title>My website</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Noto+Serif&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8aad7474de.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://pagecdn.io/lib/hammer/2.0.8/hammer.js"></script>
+  <script src="JS/chartjs-plugin-zoom.min.js"></script>
+
+</head>
+<!----------------------------------------------------------Head------------------------------------------------------------------------>
+
+<body>
+	
+<!----------------------------------------------------------Logo------------------------------------------------------------------------>
+  <div class="background">
+    <div class="mountain-background">
+
+    </div>
+  </div>
+
+  <div class="top-section-grid">
+
+    <div class="logo-tree">
+      <div class="tree-trunk">
+      </div>
+      <div class="tree-part1">
+      </div>
+      <div class="tree-part2">
+      </div>
+      <div class="tree-part3">
+      </div>
+    </div>
+
+    <div class="logo-tree">
+      <div class="tree-trunk">
+      </div>
+      <div class="tree-part1">
+      </div>
+      <div class="tree-part2">
+      </div>
+      <div class="tree-part3">
+      </div>
+    </div>
+
+    <div class="mountain">
+      <div class="m1">
+      </div>
+    </div>
+
+    <div class="logo-tree">
+      <div class="tree-trunk">
+      </div>
+      <div class="tree-part1">
+      </div>
+      <div class="tree-part2">
+      </div>
+      <div class="tree-part3">
+      </div>
+    </div>
+<!----------------------------------------------------------Logo------------------------------------------------------------------------>
+
+<!----------------------------------------------------------Nav------------------------------------------------------------------------->
+
+    <div class="nav-container">
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a class="nav-links" href="#">About</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-links" href="#">Work</a>
+        </li>
+        <li class="nav-li">
+          <a class="nav-links" href="#">Notes</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="menu-button">
+      <input type="checkbox" id="menu">
+
+      <div class="menu-line-top menu-line">
+      </div>
+
+      <div class="menu-line-center menu-line">
+      </div>
+
+      <div class="menu-line-bottom menu-line">
+      </div>
+
+      <div class="test">
+
+        <ul class="nav-ul">
+          <li class="nav-li-mobile">
+            <a class="nav-links" href="#">About</a>
+          </li>
+          <li class="nav-li-mobile">
+            <a class="nav-links" href="#">Work</a>
+          </li>
+          <li class="nav-li-mobile">
+            <a class="nav-links" href="#">Notes</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </div>
+<!----------------------------------------------------------Nav------------------------------------------------------------------------->
+
+<!----------------------------------------------------------Info------------------------------------------------------------------------>
+
+  <section class="info-me">
+  
+     
+    <div class="profile-info">
+      <h1>My Garden</h1>
+    </div>
+  </section>
+
+  <div class="info-additional">
+    <p>This site purpose is to control the lights of a garden and additional actuators such a small(12V) water pump.
+    <br>This was done by using a raspberryPi as a server and the server controlas an adruino board.
+    </p>
+  </div>
+<!----------------------------------------------------------Info------------------------------------------------------------------------>
+
+<!----------------------------------------------------------Buttons--------------------------------------------------------------------->
+  <div class="heading">
+  <h1 class="heading-text">Power</h1>
+  </div>
+
+
+  <section class="skills">
+	  
+  <div class="info-container first-info-container-padding">
+  <h2>Inverter</h2>
+  <button class="btn btn-outline-primary btn-lg btns" id="gpioPin11" type="button" onclick="index()">Not used</button>
+  </div>
+   
+  </section>
+
+  <div class="heading">
+  <h1 class="heading-text">Lights</h1>
+  </div>
+  
+  <section class="skills">
+
+  <div class="info-container first-info-container-padding">
+  <h2>Outdoor</h2>
+  <button class="btn" id="gpioPin12" type="button" onclick="index()">Not used</button>
+  <button class="btn" id="gpioPin09" type="button" onclick="index()">Not used</button>
+  <button class="btn" id="gpioPin10" type="button" onclick="index()">Not used</button>
+  </div> 
+
+  <div class="info-container">
+  <h2>Indoor</h2>
+  <button class="btn" id="" type="button" onclick="index()">Not used</button>
+  <button class="btn" id="" type="button" onclick="index()">Not used</button>
+  <button class="btn" id="" type="button" onclick="index()">Not used</button>
+  </div>
+
+  </section>
+  
+  
+  <div class="heading">
+  <h1 class="heading-text">Actuators</h1>
+  </div>
+  
+  <section class="skills">
+  <div class="info-container first-info-container-padding">
+  <h2>BLDC</h2>
+   
+  <input type="range", min="1000", max="2000", value="1000" class="slider" step ="20" id="BLDCslider" onchange="index()">
+  <button class="btn" id="stopMotor" type="button" onclick="index()">Turn Off</button>
+  </div> 
+  
+    
+  <div class="info-container">
+  <h2>Water pump</h2>
+  <button class="btn btn-outline-primary btn-lg btns" id="gpioPin10" type="button" onclick="index()">Not used</button>
+  
+  </div>
+
+  </section>
+
+ 
+ 
+  
+ <!----------------------------------------------------------Buttons--------------------------------------------------------------------->
+ 
+ 
+  
+ <!----------------------------------------------------------Charts---------------------------------------------------------------------->
+  <div class="heading">
+  <h1 class="heading-text">Charts</h1>
+  </div>
+  
+  <div class="chartSection">
+  <canvas class="chartContainer" id="myChart"></canvas>
+  <br>
+  <button class="btnChart" id="btnChart" type="button" onclick="resetZ()">Reset zoom</button>
+  <span>Number of points(not used): </span>
+  <input type="text" class="numberOfPoints" name="numberOfPoints" value=300 onchange="chartPointSize()">
+
+  </div>
+
+  <br>
+  <br>
+ 
+
+ 
+ <!--  style="height: 470px; width:80%; margin:auto; border: 5px solid #5aa897; border-radius: 10px;"  -->
+  
+ <!----------------------------------------------------------Charts---------------------------------------------------------------------->
+ 
+ 
+  
+ <!----------------------------------------------------------Sheep----------------------------------------------------------------------->
+
+  <section class="footer">
+    <div class="bottom-container">
+
+       <div class="bee">
+        <span class="baa">bee...</span>
+
+      </div>
+
+      <div class="sheep-boddy-1">
+
+      </div>
+
+       <div class="sheep-boddy">
+
+        <div class="leg-1">
+          <div class="foot">
+          </div>
+        </div>
+        <div class="leg-2">
+          <div class="foot">
+          </div>
+        </div>
+        <div class="leg-3">
+          <div class="foot">
+          </div>
+        </div>
+        <div class="leg-4">
+          <div class="foot">
+          </div>
+        </div>
+
+        <div class="sheep-head">
+          <div class="left-eye">
+            <div class="eye">
+
+            </div>
+
+          </div>
+          <div class="right-eye">
+            <div class="eye">
+
+            </div>
+
+          </div>
+
+          <div class="nose-1">
+
+          </div>
+
+          <div class="nose-2">
+
+          </div>
+
+          <div class="ear-left">
+
+          </div>
+
+          <div class="ear-right">
+
+          </div>
+
+        </div>
+
+        <div class="tail">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ <!----------------------------------------------------------Sheep----------------------------------------------------------------------->
+ 
+ 
+ 
+ <!----------------------------------------------------------Contact me------------------------------------------------------------------->
+
+  <div class="contact-me">
+
+    <div class="contact-me-1">
+    <a href="https://www.facebook.com/iancu.claudiu.71" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    </div>
+
+    <div class="contact-me-1">
+    <a href="https://www.instagram.com/claudiu87i" target="_blank"><i class="fab fa-instagram-square"></i></a>
+    </div>
+
+
+  </div>
+ <!----------------------------------------------------------Contact me------------------------------------------------------------------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="JS/index.js" charset="utf-8"></script>
+</body>
+
+</html>
